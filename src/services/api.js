@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://giat-cerika.vercel.app/api',
+  baseURL: 'https://giat-cerika-node.vercel.app/api',
   headers: {
     'Content-Type': 'application/json',
   }
