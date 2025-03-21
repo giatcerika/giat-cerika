@@ -51,3 +51,12 @@ export const updateQuiz = async (id, formData) => {
 };
 
 export const deleteQuiz = (id) => api.delete(`/quiz/${id}`);
+
+// Fungsi untuk mendapatkan semua quiz attempts
+export const getAllQuizAttempts = () => api.get('/quiz-attempt');
+
+// Fungsi untuk mendapatkan quiz attempts berdasarkan ID quiz
+export const getQuizAttemptsByQuizId = (quizId) => api.get(`/quiz-attempt/quiz/${quizId}`);
+
+// Fungsi untuk mendapatkan detail quiz attempt
+export const getQuizAttemptById = (attemptId) => api.get(`/quiz-attempt/${attemptId}`);
